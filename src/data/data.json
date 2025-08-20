@@ -1,0 +1,29 @@
+{
+  "thumbnail": [
+    {
+      "id": 1,
+      "image": "/thumbnail-1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "/thumbnail-2.jpg"
+    },
+    {
+      "id": 3,
+      "image": "/thumbnail-3.jpg"
+    },
+    {
+      "id": 4,
+      "image": "/thumbnail-4.jpg"
+    },
+    {
+      "id": 5,
+      "image": "/thumbnail-5.jpg"
+    }
+  ],
+  "about": {
+    "title": "Welcome to Her S spa",
+    "content_1": "HerSspa is a global chain of Mini Home Spas, providing comprehensive and effective solutions for skin care, rejuvenation, and full-body massage therapy.",
+    "content_2": "With devices and products utilizing exclusive ageLOC technology from the United States, capable of directly influencing and reactivating youthful cellular functions, helping to prevent aging at its root."
+  }
+}

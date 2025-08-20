@@ -1,0 +1,235 @@
+{
+  "franchiseItems": [
+    {
+      "id": 1,
+      "label": "HA NOI BRANCH.",
+      "href": "#hanoi",
+      "children": [
+        {
+          "id": 1,
+          "label": "Her S Spa SiSu"
+        },
+        {
+          "id": 2,
+          "label": "Her S Spa Green Park"
+        },
+        {
+          "id": 3,
+          "label": "Her S Spa Thanh Xuân"
+        },
+        {
+          "id": 4,
+          "label": "Her S Spa New Skyline"
+        },
+        {
+          "id": 5,
+          "label": "Her S Spa Harmony"
+        },
+        {
+          "id": 6,
+          "label": "Her S spa Tây Hồ"
+        },
+        {
+          "id": 7,
+          "label": "HerSspa Green Retreat"
+        },
+        {
+          "id": 8,
+          "label": "Her S spa Healing"
+        },
+        {
+          "id": 9,
+          "label": "Her S Spa by Chi Le"
+        },
+        {
+          "id": 10,
+          "label": "Her S spa by Tong Ha"
+        },
+        {
+          "id": 11,
+          "label": "Her SSpa An"
+        },
+        {
+          "id": 12,
+          "label": "Her S Spa Thăng Long Number One"
+        },
+        {
+          "id": 13,
+          "label": "Her S Spa Mimosa"
+        },
+        {
+          "id": 14,
+          "label": "HerSspa by Trang Kim"
+        },
+        {
+          "id": 15,
+          "label": "Her S Spa New Skyline"
+        },
+        {
+          "id": 16,
+          "label": "Her s spa Le grand Jardin"
+        },
+        {
+          "id": 17,
+          "label": "Her S spa Tây Hồ"
+        },
+        {
+          "id": 18,
+          "label": "HerSspa Serene"
+        },
+        {
+          "id": 19,
+          "label": "Hapulico HerSSpa"
+        },
+        {
+          "id": 20,
+          "label": "Her S Spa Elite"
+        },
+        {
+          "id": 21,
+          "label": "Her S spa Healing"
+        },
+        {
+          "id": 22,
+          "label": "Her S Spa An Nhiên"
+        },
+        {
+          "id": 23,
+          "label": "Gia Trịnh Heal'thier Hersspa"
+        },
+        {
+          "id": 24,
+          "label": "Her S Spa Hoàng Mai"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "HO CHI MINH BRANCH.",
+      "href": "#hcm",
+      "children": [
+        {
+          "id": 1,
+          "label": "Her S spa Bason Aqua"
+        },
+        {
+          "id": 2,
+          "label": "Her S Spa Sunny House"
+        },
+        {
+          "id": 3,
+          "label": "Her S Spa Quận 10"
+        },
+        {
+          "id": 4,
+          "label": "Her S spa Serena"
+        },
+        {
+          "id": 5,
+          "label": "Her S spa Sala"
+        },
+        {
+          "id": 6,
+          "label": "Her S Spa Midtown"
+        },
+        {
+          "id": 7,
+          "label": "Her s spa Thuận An"
+        },
+        {
+          "id": 8,
+          "label": "Her s spa Sunshine"
+        },
+        {
+          "id": 9,
+          "label": "Her S spa by Luminis"
+        },
+        {
+          "id": 10,
+          "label": "Her S spa Belleza"
+        },
+        {
+          "id": 11,
+          "label": "Her S Spa Midtown"
+        },
+        {
+          "id": 12,
+          "label": "Her S spa Linh Loan"
+        },
+        {
+          "id": 13,
+          "label": "Her S spa Uyên Thảo"
+        },
+        {
+          "id": 14,
+          "label": "Her S Spa Thanh Xuân"
+        },
+        {
+          "id": 15,
+          "label": "Her S spa Stella Thảo Điền"
+        },
+        {
+          "id": 16,
+          "label": "Her S spa Calla"
+        },
+        {
+          "id": 17,
+          "label": "Her S spa Phan Xích Long"
+        },
+        {
+          "id": 18,
+          "label": "Her S Spa Biên Hòa"
+        },
+        {
+          "id": 19,
+          "label": "Her S Spa Vinhomes Central Park"
+        },
+        {
+          "id": 20,
+          "label": "Her S spa By Lam"
+        },
+        {
+          "id": 21,
+          "label": "Her S Spa Biconsi TDM"
+        },
+        {
+          "id": 22,
+          "label": "Her S Spa by Phuong Truong"
+        },
+        {
+          "id": 23,
+          "label": "Her S Spa Moon Swan"
+        },
+        {
+          "id": 24,
+          "label": "Her S Spa Mây Hạc"
+        },
+        {
+          "id": 25,
+          "label": "Her S spa Calla"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "PROVINCIAL BRANCH",
+      "href": "#tinh",
+      "children": []
+    },
+    {
+      "id": 4,
+      "label": "OVERSEAS BRANCH",
+      "href": "#nuocngoai",
+      "children": [
+        {
+          "id": 1,
+          "label": "Her S spa Malaysia"
+        },
+        {
+          "id": 2,
+          "label": "Her S spa Budapest "
+        }
+      ]
+    }
+  ]
+}
