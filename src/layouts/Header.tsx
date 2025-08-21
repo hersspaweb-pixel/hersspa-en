@@ -158,14 +158,14 @@ const Header = () => {
             )}
           </div>
 
-          <DialogFooter>
+          {/* <DialogFooter>
             <Button
               className="bg-[#543217] text-white cursor-pointer hover:bg-[#543217]/90"
               onClick={() => setIsDialogOpen(false)}
             >
               Close
             </Button>
-          </DialogFooter>
+          </DialogFooter> */}
         </DialogContent>
       </Dialog>
     </header>

@@ -27,7 +27,7 @@ const Thumbnail = () => {
   };
 
   return (
-    <div className="px-4">
+    <div className="px-4 container mx-auto">
       <Swiper
         modules={[EffectFade, Autoplay]}
         effect="fade"
@@ -42,7 +42,7 @@ const Thumbnail = () => {
         {data.thumbnail.map((item) => (
           <SwiperSlide key={item.id}>
             <div
-              className="relative overflow-hidden rounded-lg duration-300 cursor-pointer"
+              className="relative overflow-hidden rounded-b-lg duration-300 cursor-pointer"
               onClick={() => openModal(item.image, item.id)}
             >
               <Image
@@ -50,7 +50,7 @@ const Thumbnail = () => {
                 alt={`Thumbnail ${item.id}`}
                 width={500}
                 height={500}
-                className="w-full h-[700px] rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-[700px] rounded-b-lg object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
           </SwiperSlide>

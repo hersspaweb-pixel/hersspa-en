@@ -24,9 +24,7 @@ export default function RootLayout({
     <html lang="en" className={`${prata.variable}`}>
       <body className="antialiased">
         <Header />
-        <div className="bg-gradient-to-br from-amber-50 to-orange-50">
-          {children}
-        </div>
+        <div>{children}</div>
         <Footer />
       </body>
     </html>
