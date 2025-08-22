@@ -28,27 +28,31 @@ const About = () => {
 
     return () => {
       if (galleryRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(galleryRef.current);
       }
     };
   }, []);
 
   return (
-    <section id="about" className="flex flex-col gap-16 scroll-mt-60 mt-16">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section
+      id="about"
+      className="flex flex-col gap-8 md:gap-12 lg:gap-16 scroll-mt-60 mt-8 md:mt-12 lg:mt-16"
+    >
+      <div className="w-full max-w-[1200px] mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left side - Content */}
           <div className="space-y-6">
-            <div className="space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-bold text-amber-800 leading-tight">
+            <div className="space-y-3 md:space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-amber-800 leading-tight">
                 {data.about.title}
               </h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-amber-500 to-orange-500"></div>
+              <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-amber-500 to-orange-500"></div>
             </div>
 
-            <div className="space-y-4 text-gray-700 leading-relaxed">
-              <p className="text-lg">{data.about.content_1}</p>
-              <p>{data.about.content_2}</p>
+            <div className="space-y-3 md:space-y-4 text-gray-700 leading-relaxed">
+              <p className="text-base md:text-lg">{data.about.content_1}</p>
+              <p className="text-sm md:text-base">{data.about.content_2}</p>
               <div className="pt-4">
                 <button className="cursor-pointer bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
                   See more
@@ -77,11 +81,14 @@ const About = () => {
       </div>
 
       {/* Spa Treatment Section */}
-      <div className="py-16 bg-[url('/minimal-bg-pattern.jpg')]">
+      <div className="py-8 md:py-12 lg:py-16 bg-[url('/minimal-bg-pattern.jpg')]">
         {/* Spa Gallery Section */}
-        <div ref={galleryRef} className="mb-16 container mx-auto px-4">
+        <div
+          ref={galleryRef}
+          className="mb-8 md:mb-12 lg:mb-16 w-full max-w-[1200px] mx-auto px-4"
+        >
           {/* Gallery Grid - 3 columns */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
             {/* Column 1 - 2 rows */}
             <div
               className={`space-y-4 lg:space-y-6 ${
@@ -89,7 +96,7 @@ const About = () => {
               }`}
               style={{ animationDelay: isVisible ? '0.1s' : '0s' }}
             >
-              <div className="relative h-48 lg:h-64 rounded-2xl overflow-hidden transition-all duration-300 group">
+              <div className="relative h-32 sm:h-40 md:h-48 lg:h-64 rounded-xl md:rounded-2xl overflow-hidden transition-all duration-300 group">
                 <Image
                   src={data.about.gallery.images[0].src}
                   alt={data.about.gallery.images[0].alt}
@@ -99,7 +106,7 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="relative h-48 lg:h-64 rounded-2xl overflow-hidden transition-all duration-300 group">
+              <div className="relative h-32 sm:h-40 md:h-48 lg:h-64 rounded-xl md:rounded-2xl overflow-hidden transition-all duration-300 group">
                 <Image
                   src={data.about.gallery.images[1].src}
                   alt={data.about.gallery.images[1].alt}
@@ -117,7 +124,7 @@ const About = () => {
               }`}
               style={{ animationDelay: isVisible ? '0.3s' : '0s' }}
             >
-              <div className="relative h-48 lg:h-64 rounded-2xl overflow-hidden transition-all duration-300 group">
+              <div className="relative h-32 sm:h-40 md:h-48 lg:h-64 rounded-xl md:rounded-2xl overflow-hidden transition-all duration-300 group">
                 <Image
                   src={data.about.gallery.images[2].src}
                   alt={data.about.gallery.images[2].alt}
@@ -127,7 +134,7 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="relative h-48 lg:h-64 rounded-2xl overflow-hidden transition-all duration-300 group">
+              <div className="relative h-32 sm:h-40 md:h-48 lg:h-64 rounded-xl md:rounded-2xl overflow-hidden transition-all duration-300 group">
                 <Image
                   src={data.about.gallery.images[3].src}
                   alt={data.about.gallery.images[3].alt}
@@ -145,7 +152,7 @@ const About = () => {
               }`}
               style={{ animationDelay: isVisible ? '0.5s' : '0s' }}
             >
-              <div className="relative h-48 md:h-full lg:h-[544px] rounded-2xl overflow-hidden transition-all duration-300 group">
+              <div className="relative h-32 sm:h-40 md:h-full lg:h-[544px] rounded-xl md:rounded-2xl overflow-hidden transition-all duration-300 group">
                 <Image
                   src={data.about.gallery.images[4].src}
                   alt={data.about.gallery.images[4].alt}
@@ -184,7 +191,7 @@ const About = () => {
             ></div>
           </div>
         </div>
-        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="w-full max-w-[1200px] mx-auto px-4 grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left side - Spa Image */}
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
@@ -205,17 +212,21 @@ const About = () => {
           </div>
 
           {/* Right side - Content */}
-          <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
               How long has it been...{' '}
               <span className="text-[#5c8c30]">
                 {data.about.spa_section.subtitle_highlight}
               </span>
             </h2>
 
-            <div className="space-y-4 text-gray-600 leading-relaxed">
-              <p className="text-lg">{data.about.spa_section.description_1}</p>
-              <p>{data.about.spa_section.description_2}</p>
+            <div className="space-y-3 md:space-y-4 text-gray-600 leading-relaxed">
+              <p className="text-base md:text-lg">
+                {data.about.spa_section.description_1}
+              </p>
+              <p className="text-sm md:text-base">
+                {data.about.spa_section.description_2}
+              </p>
 
               <div className="mt-6">
                 <p className="flex items-start space-x-2">

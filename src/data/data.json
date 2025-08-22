@@ -208,21 +208,47 @@
     }
   },
   "gallery": {
-    "title": "HOẠT ĐỘNG CỘNG ĐỒNG",
+    "title": "HER S SPA COMMUNITY ACTIVITIES",
     "images": {
-      "large": ["/gallery-main-1.jpg", "/gallery-main-2.jpg"],
+      "large": ["/gallery-1.jpg", "/gallery-2.jpg"],
       "grid": [
-        "/gallery-grid-1.jpg",
-        "/gallery-grid-2.jpg",
-        "/gallery-grid-3.jpg",
-        "/gallery-grid-4.jpg",
-        "/gallery-grid-5.jpg",
-        "/gallery-grid-6.jpg",
-        "/gallery-grid-7.jpg",
-        "/gallery-grid-8.jpg",
-        "/gallery-grid-9.jpg",
-        "/gallery-grid-10.jpg"
+        "/gallery-3.jpg",
+        "/gallery-4.jpg",
+        "/gallery-5.jpg",
+        "/gallery-6.jpg",
+        "/gallery-7.jpg",
+        "/gallery-8.jpg",
+        "/gallery-9.jpg",
+        "/gallery-10.jpg",
+        "/gallery-11.jpg",
+        "/gallery-12.jpg"
       ]
     }
+  },
+  "benefits": {
+    "title": "RIGHTS & BENEFITS - NO FEES",
+    "titleEn": "RIGHTS & BENEFITS - NO FEES",
+    "items": [
+      {
+        "id": 1,
+        "number": "1",
+        "title": "Use HER S SPA brand throughout your business operations"
+      },
+      {
+        "id": 2,
+        "number": "2",
+        "title": "Receive comprehensive skincare treatment protocols & setup guidance"
+      },
+      {
+        "id": 3,
+        "number": "3",
+        "title": "Support for product and equipment procurement directly from manufacturers"
+      },
+      {
+        "id": 4,
+        "number": "4",
+        "title": "Lifelong advisory partnership for business operations & development"
+      }
+    ]
   }
 }

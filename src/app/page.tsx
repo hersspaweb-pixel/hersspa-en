@@ -7,7 +7,7 @@ import Whysochoose from '@/components/Whysochoose';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="w-full overflow-x-hidden">
       <Thumbnail />
       <About />
       <Whysochoose />

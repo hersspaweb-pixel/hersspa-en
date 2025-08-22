@@ -31,6 +31,7 @@ const Services = () => {
 
     return () => {
       if (servicesRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(servicesRef.current);
       }
     };
@@ -43,12 +44,12 @@ const Services = () => {
         id="service"
         className="bg-gray-50 scroll-mt-60 bg-[url('/minimal-bg-pattern.jpg')]"
       >
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-[1200px] mx-auto px-4">
           {/* Header */}
-          <div className="text-center mb-12 pt-4">
-            <div className="flex items-center justify-center mb-6 max-w-[1200px] mx-auto">
-              <div className="flex items-center justify-end w-full space-x-4">
-                <div className="w-20">
+          <div className="text-center mb-8 md:mb-12 pt-4">
+            <div className="flex items-center justify-center mb-4 md:mb-6 w-full max-w-[1200px] mx-auto">
+              <div className="flex items-center justify-end w-full space-x-2 md:space-x-4">
+                <div className="w-12 md:w-16 lg:w-20">
                   <Image
                     src="/service-decor.png"
                     alt="decor"
@@ -57,12 +58,12 @@ const Services = () => {
                     className="object-contain"
                   />
                 </div>
-                <span className="text-[#5c8c30] italic font-medium">
+                <span className="text-[#5c8c30] italic font-medium text-sm md:text-base">
                   {data.services.subtitle}
                 </span>
               </div>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#5c8c30] mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#5c8c30] mb-4 md:mb-6">
               {data.services.title}
             </h2>
           </div>
@@ -70,18 +71,18 @@ const Services = () => {
           {/* Services Grid */}
           <div
             ref={servicesRef}
-            className="grid lg:grid-cols-3 gap-8 mb-12 max-w-[1200px] mx-auto"
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12 w-full max-w-[1200px] mx-auto"
           >
             {data.services.items.map((service, index) => (
               <div
                 key={service.id}
-                className={`bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 ${
+                className={`bg-white rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 ${
                   isVisible ? 'animate-slide-in-right' : 'opacity-0'
                 }`}
                 style={{ animationDelay: isVisible ? `${index * 0.2}s` : '0s' }}
               >
                 {/* Service Image */}
-                <div className="relative h-64 mb-6 rounded-2xl overflow-hidden">
+                <div className="relative h-48 md:h-56 lg:h-64 mb-4 md:mb-6 rounded-xl md:rounded-2xl overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -91,19 +92,19 @@ const Services = () => {
                 </div>
 
                 {/* Service Title */}
-                <h3 className="text-xl font-bold text-gray-800 mb-4 text-center leading-tight">
+                <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4 text-center leading-tight">
                   {service.title}
                 </h3>
 
                 {/* Service Benefits */}
-                <div className="space-y-3">
+                <div className="space-y-2 md:space-y-3">
                   {service.benefits.map((benefit, benefitIndex) => (
                     <div
                       key={benefitIndex}
                       className="flex items-start space-x-2"
                     >
                       <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p className="text-gray-600 text-xs md:text-sm leading-relaxed">
                         {benefit}
                       </p>
                     </div>
@@ -115,26 +116,26 @@ const Services = () => {
 
           {/* View All Button */}
           <div className="text-center">
-            <button className="bg-[#5c8c30] hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <button className="bg-[#5c8c30] hover:bg-green-700 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm md:text-base">
               {data.services.button_text}
             </button>
           </div>
         </div>
         <div
-          className="mt-16 bg-cover bg-center overflow-hidden"
+          className="mt-8 md:mt-12 lg:mt-16 bg-cover bg-center overflow-hidden"
           style={{ backgroundImage: "url('/minimal-bg-pattern.jpg')" }}
         >
-          <div className="bg-[url('/service-thumbnail.jpg')] bg-cover bg-black/50 bg-blend-overlay bg-center p-12">
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="bg-[url('/service-thumbnail.jpg')] bg-cover bg-black/50 bg-blend-overlay bg-center p-6 md:p-8 lg:p-12">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
               {data.services.categories.map((category, index) => (
                 <div
                   key={index}
-                  className="bg-white/90 backdrop-blur-sm flex gap-4 justify-center h-full items-center rounded-2xl p-6 text-center hover:bg-white transition-all duration-300"
+                  className="bg-white/90 backdrop-blur-sm flex gap-2 md:gap-4 justify-center h-full items-center rounded-xl md:rounded-2xl p-4 md:p-6 text-center hover:bg-white transition-all duration-300"
                 >
-                  <h3 className="text-xl font-bold text-gray-800">
+                  <h3 className="text-lg md:text-xl font-bold text-gray-800">
                     {category}
                   </h3>
-                  <MdKeyboardArrowDown className="text-3xl" />
+                  <MdKeyboardArrowDown className="text-2xl md:text-3xl" />
                 </div>
               ))}
             </div>
