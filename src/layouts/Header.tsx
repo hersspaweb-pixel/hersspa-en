@@ -24,6 +24,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import { Separator } from '@/components/ui/separator';
 
 const navItems = [
   {
@@ -128,6 +129,13 @@ const Header = () => {
                   </Link>
                 ))}
               </div>
+              <Separator className="my-4" />
+              <Link
+                href="https://www.hersspa.com/"
+                className="cursor-pointer text-white py-1.5 rounded-md relative"
+              >
+                Vietnamese
+              </Link>
             </SheetContent>
           </Sheet>
         </div>
@@ -173,6 +181,12 @@ const Header = () => {
               FRANCHISING
             </span>
           </button>
+          <Link
+            href="https://www.hersspa.com/"
+            className="cursor-pointer px-3 text-white md:px-4 lg:px-6 py-1.5 md:py-2 rounded-md relative"
+          >
+            Vietnamese
+          </Link>
 
           {isDropdownOpen && (
             <div className="absolute top-full mt-2 bg-white border-2 border-[#543217] rounded-md shadow-lg min-w-[200px] md:min-w-[250px] z-50 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none">
