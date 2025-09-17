@@ -221,14 +221,16 @@ const Header = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 max-h-64 md:max-h-96 overflow-y-auto">
             {selectedFranchise?.children?.map(
               (location: { id: number; label: string }) => (
-                <div
+                <Link
+                  href={`https://m.me/${location.id}`}
+                  target="_blank"
                   key={location.id}
                   className="p-2 md:p-3 bg-[#FFD56E] bg-opacity-10 rounded-md border border-[#543217] border-opacity-20"
                 >
                   <span className="text-[#543217] font-medium text-sm md:text-base">
                     {location.label}
                   </span>
-                </div>
+                </Link>
               )
             )}
             {selectedFranchise?.children?.length === 0 && (
