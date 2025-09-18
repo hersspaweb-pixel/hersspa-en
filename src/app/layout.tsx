@@ -13,7 +13,7 @@ const prata = Prata({
 export const metadata: Metadata = {
   title: 'Her S Spa',
   description:
-    'HerSspa chuỗi MiniHome Spa toàn cầu, mang đến các giải pháp toàn diện, hiệu quả về chăm sóc, trẻ hóa da và trị liệu Body.',
+    'Her S Spa - Global MiniHome Spa chain, providing comprehensive and effective solutions for skincare, anti-aging, and body therapy treatments.',
 };
 
 export default function RootLayout({
