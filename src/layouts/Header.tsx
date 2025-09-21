@@ -28,15 +28,15 @@ import { Separator } from '@/components/ui/separator';
 
 const navItems = [
   {
-    label: 'Home',
+    label: 'Trang chủ',
     href: '#',
   },
   {
-    label: 'About',
+    label: 'Giới thiệu',
     href: '#about',
   },
   {
-    label: 'Service',
+    label: 'Dịch vụ',
     href: '#service',
   },
   {
@@ -44,7 +44,7 @@ const navItems = [
     href: '#gallery',
   },
   {
-    label: 'Partner',
+    label: 'Đối tác',
     href: '#partner',
   },
 ];
@@ -134,7 +134,7 @@ const Header = () => {
                 href="https://www.hersspa.com/"
                 className="cursor-pointer text-white py-1.5 rounded-md relative"
               >
-                Vietnamese
+                English
               </Link>
             </SheetContent>
           </Sheet>
@@ -143,11 +143,11 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:block col-span-3 h-full">
           <NavigationMenu className="h-full">
-            <NavigationMenuList className="gap-4 flex h-full items-center justify-center lg:gap-6 xl:gap-8 mr-2 lg:mr-4">
+            <NavigationMenuList className="gap-4 flex h-full items-center justify-center lg:gap-2 xl:gap-4 mr-2 lg:mr-4">
               {navItems.map((item) => (
                 <NavigationMenuItem key={item.href}>
                   <Link href={item.href} legacyBehavior passHref>
-                    <NavigationMenuLink className="bg-gradient-to-b from-white to-[#FFD56E] text-sm lg:text-base xl:text-[20px] bg-clip-text text-transparent cursor-pointer">
+                    <NavigationMenuLink className="whitespace-nowrap bg-gradient-to-b from-white to-[#FFD56E] text-sm lg:text-base xl:text-[20px] bg-clip-text text-transparent cursor-pointer">
                       {item.label}
                     </NavigationMenuLink>
                   </Link>
@@ -170,7 +170,7 @@ const Header = () => {
 
         {/* Franchising Button */}
         <div
-          className="col-span-1 md:col-span-3 items-center justify-center hidden md:flex h-full relative"
+          className="col-span-1 md:col-span-3 flex items-center justify-center h-full relative"
           ref={dropdownRef}
         >
           <button
@@ -182,14 +182,14 @@ const Header = () => {
             </span>
           </button>
           <Link
-            href="https://www.hersspa.com/"
-            className="cursor-pointer px-3 text-white md:px-4 lg:px-6 py-1.5 md:py-2 rounded-md relative"
+            href="https://english.hersspa.com/"
+            className="cursor-pointer px-3 text-white md:px-4 lg:px-6 py-1.5 md:py-2 hidden md:block rounded-md relative"
           >
-            Vietnamese
+            English
           </Link>
 
           {isDropdownOpen && (
-            <div className="absolute top-full mt-2 bg-white border-2 border-[#543217] rounded-md shadow-lg min-w-[200px] md:min-w-[250px] z-50 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none">
+            <div className="absolute top-full mt-2 bg-white border-2 border-[#543217] rounded-md shadow-lg min-w-[200px] md:min-w-[250px] z-50 -left-20 md:left-16">
               {franchiseData.franchiseItems.map((item) => (
                 <button
                   key={item.id}
@@ -208,34 +208,37 @@ const Header = () => {
         open={isDialogOpen}
         onOpenChange={(open) => setIsDialogOpen(open)}
       >
-        <DialogContent className="max-w-sm md:max-w-2xl max-h-[80vh] overflow-y-auto mx-4">
-          <DialogHeader>
+        <DialogContent className="max-w-sm md:max-w-2xl max-h-[90vh] overflow-y-auto mx-4 flex flex-col m-0">
+          <DialogHeader className="text-center">
             <DialogTitle className="text-[#543217] text-lg md:text-xl font-bold">
               {selectedFranchise?.label}
             </DialogTitle>
             <DialogDescription className="text-[#543217] text-sm md:text-base">
-              List of Her S Spa Branches.
+              Danh sách các chi nhánh của Her S Spa.
             </DialogDescription>
           </DialogHeader>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 max-h-64 md:max-h-96 overflow-y-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 max-h-[60vh] md:max-h-96 overflow-y-auto flex-1">
             {selectedFranchise?.children?.map(
-              (location: { id: number; label: string }) => (
+              (location: { id: number; label: string; address: string }) => (
                 <Link
                   href={`https://m.me/${location.id}`}
                   target="_blank"
                   key={location.id}
-                  className="p-2 md:p-3 bg-[#FFD56E] bg-opacity-10 rounded-md border border-[#543217] border-opacity-20"
+                  className="p-2 md:p-3 bg-[#FFD56E] bg-opacity-10 rounded-md border flex flex-col gap-2 border-[#543217] border-opacity-20"
                 >
                   <span className="text-[#543217] font-medium text-sm md:text-base">
                     {location.label}
+                  </span>
+                  <span className="text-black font-medium text-xs md:text-sm">
+                    {location.address}
                   </span>
                 </Link>
               )
             )}
             {selectedFranchise?.children?.length === 0 && (
-              <div className="col-span-full text-center py-6 md:py-8 text-[#543217] opacity-60 text-sm md:text-base">
-                Coming soon
+              <div className="col-span-full flex items-center justify-center py-6 md:py-8 text-[#543217] opacity-60 text-sm md:text-base">
+                Sắp có
               </div>
             )}
           </div>
