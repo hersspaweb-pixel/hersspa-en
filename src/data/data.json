@@ -2,23 +2,23 @@
   "thumbnail": [
     {
       "id": 1,
-      "image": "/thumbnail-1.jpg"
+      "image": "/assets/thumbnail-1.jpg"
     },
     {
       "id": 2,
-      "image": "/thumbnail-2.jpg"
+      "image": "/assets/thumbnail-2.jpg"
     },
     {
       "id": 3,
-      "image": "/thumbnail-3.jpg"
+      "image": "/assets/thumbnail-3.jpg"
     },
     {
       "id": 4,
-      "image": "/thumbnail-4.jpg"
+      "image": "/assets/thumbnail-4.jpg"
     },
     {
       "id": 5,
-      "image": "/thumbnail-5.jpg"
+      "image": "/assets/thumbnail-5.jpg"
     }
   ],
   "about": {
@@ -28,31 +28,31 @@
       "images": [
         {
           "id": 1,
-          "src": "/thumbnail-1.jpg",
+          "src": "/assets/thumbnail-1.jpg",
           "alt": "Spa Reception Area",
           "category": "reception"
         },
         {
           "id": 2,
-          "src": "/thumbnail-2.jpg",
+          "src": "/assets/thumbnail-2.jpg",
           "alt": "Treatment Room",
           "category": "treatment"
         },
         {
           "id": 3,
-          "src": "/thumbnail-3.jpg",
+          "src": "/assets/thumbnail-3.jpg",
           "alt": "Relaxation Space",
           "category": "relaxation"
         },
         {
           "id": 4,
-          "src": "/thumbnail-4.jpg",
+          "src": "/assets/thumbnail-4.jpg",
           "alt": "Spa Amenities",
           "category": "amenities"
         },
         {
           "id": 5,
-          "src": "/thumbnail-5.jpg",
+          "src": "/assets/thumbnail-5.jpg",
           "alt": "Wellness Center",
           "category": "wellness"
         }
@@ -62,7 +62,7 @@
     "content_1": "HerSspa is a global chain of Mini Home Spas, providing comprehensive and effective solutions for skin care, rejuvenation, and full-body massage therapy.",
     "content_2": "With devices and products utilizing exclusive ageLOC technology from the United States, capable of directly influencing and reactivating youthful cellular functions, helping to prevent aging at its root.",
     "spa_section": {
-      "thumbnail": "/about-thumbnail.jpg",
+      "thumbnail": "/assets/about-thumbnail.jpg",
       "title": "How long has it been... SINCE YOU LOVED YOURSELF?",
       "subtitle_highlight": "SINCE YOU LOVED YOURSELF?",
       "description_1": "Stress, insomnia, dull skin, premature aging, uncontrolled weight gain...",
@@ -88,7 +88,7 @@
       {
         "id": 1,
         "title": "ANTI-AGING & SKIN REJUVENATION",
-        "image": "/service-1.jpg",
+        "image": "/assets/service-1.jpg",
         "benefits": [
           "Skin detoxification",
           "Elastin boosting essence",
@@ -99,7 +99,7 @@
       {
         "id": 2,
         "title": "FACIAL LIFTING & FIRMING",
-        "image": "/service-2.jpg",
+        "image": "/assets/service-2.jpg",
         "benefits": [
           "Deep cleansing",
           "Collagen regeneration",
@@ -111,7 +111,7 @@
       {
         "id": 3,
         "title": "RELAX BODY MASSAGE & CIRCULATION THERAPY",
-        "image": "/service-3.jpg",
+        "image": "/assets/service-3.jpg",
         "benefits": [
           "Combining modern science & traditional Eastern medicine",
           "Comprehensive skin nourishment & neck-shoulder relaxation"
@@ -129,21 +129,21 @@
         "number": "01",
         "title": "Exclusive patented technology and high-quality products from the USA",
         "description": "The exclusive ageLOC technology patented in the United States has the ability to directly impact deep within the skin. It helps regenerate cellular vitality, bringing a youthful appearance to women, representing a breakthrough advancement in safe and effective beauty technology. We guarantee authentic product lines.",
-        "certificate": "/why-1.jpg"
+        "certificate": "/assets/why-1.jpg"
       },
       {
         "id": 2,
         "number": "02",
         "title": "Immediate results from the first experience",
         "description": "Treatment combining advanced technology with acupressure therapy to stimulate the lymphatic system throughout the body, helping to rejuvenate the entire skin complexion.",
-        "images": "/why-2.jpg"
+        "images": "/assets/why-2.jpg"
       },
       {
         "id": 3,
         "number": "03",
         "title": "Dedicated team of specialists and spa owners",
         "description": "We always strive to provide the best and most suitable experience for our customers.",
-        "teamImage": "/why-3.jpg"
+        "teamImage": "/assets/why-3.jpg"
       }
     ]
   },
@@ -155,20 +155,20 @@
     "items": [
       {
         "id": 1,
-        "image": "/partner-1.jpg",
+        "image": "/assets/partner-1.jpg",
         "title": "Small scale: optimal investment for setup, decor, equipment, and process training",
         "subtitle": "Criteria: Small but beautiful, professional, 100% USA product quality"
       },
       {
         "id": 2,
-        "image": "/partner-2.jpg",
+        "image": "/assets/partner-2.jpg",
         "title": "Free professional training and treatment consultation",
         "subtitle": "Deployment support when expanding franchise chains (free of charge)",
         "description": "Support customer development using home products across Vietnam and 50 countries."
       },
       {
         "id": 3,
-        "image": "/partner-3.jpg",
+        "image": "/assets/partner-3.jpg",
         "title": "Mini HomeSpa deployment time: 3-7 days",
         "subtitle": "Required space for Mini HomeSpa: 10-30m2"
       }
@@ -210,18 +210,18 @@
   "gallery": {
     "title": "HER S SPA COMMUNITY ACTIVITIES",
     "images": {
-      "large": ["/gallery-1.jpg", "/gallery-2.jpg"],
+      "large": ["/assets/gallery-1.jpg", "/assets/gallery-2.jpg"],
       "grid": [
-        "/gallery-3.jpg",
-        "/gallery-4.jpg",
-        "/gallery-5.jpg",
-        "/gallery-6.jpg",
-        "/gallery-7.jpg",
-        "/gallery-8.jpg",
-        "/gallery-9.jpg",
-        "/gallery-10.jpg",
-        "/gallery-11.jpg",
-        "/gallery-12.jpg"
+        "/assets/gallery-3.jpg",
+        "/assets/gallery-4.jpg",
+        "/assets/gallery-5.jpg",
+        "/assets/gallery-6.jpg",
+        "/assets/gallery-7.jpg",
+        "/assets/gallery-8.jpg",
+        "/assets/gallery-9.jpg",
+        "/assets/gallery-10.jpg",
+        "/assets/gallery-11.jpg",
+        "/assets/gallery-12.jpg"
       ]
     }
   },

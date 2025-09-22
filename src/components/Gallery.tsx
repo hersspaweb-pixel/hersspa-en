@@ -37,11 +37,11 @@ const Gallery = () => {
   return (
     <section
       id="gallery"
-      className="py-8 md:py-12 lg:py-16 bg-gray-50 relative scroll-mt-60 bg-[url('/minimal-bg-pattern.jpg')]"
+      className="py-8 md:py-12 lg:py-16 bg-gray-50 relative scroll-mt-60 bg-[url('/assets/minimal-bg-pattern.jpg')]"
     >
       <div className="w-full max-w-[1200px] mx-auto px-4">
         <Image
-          src="/service-decor.png"
+          src="/assets/service-decor.png"
           alt="Her S spa"
           width={100}
           height={100}
