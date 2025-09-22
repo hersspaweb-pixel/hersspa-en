@@ -134,7 +134,7 @@ const Header = () => {
                 href="https://www.hersspa.com/"
                 className="cursor-pointer text-white py-1.5 rounded-md relative"
               >
-                English
+                Vietnamese
               </Link>
             </SheetContent>
           </Sheet>
@@ -182,10 +182,10 @@ const Header = () => {
             </span>
           </button>
           <Link
-            href="https://english.hersspa.com/"
+            href="https://www.hersspa.com/"
             className="cursor-pointer px-3 text-white md:px-4 lg:px-6 py-1.5 md:py-2 hidden md:block rounded-md relative"
           >
-            English
+            Vietnamese
           </Link>
 
           {isDropdownOpen && (
