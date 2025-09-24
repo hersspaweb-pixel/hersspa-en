@@ -228,7 +228,7 @@ const Header = () => {
               {selectedFranchise?.label}
             </DialogTitle>
             <DialogDescription className="text-[#543217] text-sm md:text-base">
-              Danh sách các chi nhánh của Her S Spa.
+              List of Her S Spa branches.
             </DialogDescription>
           </DialogHeader>
 
