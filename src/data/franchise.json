@@ -2,8 +2,8 @@
   "franchiseItems": [
     {
       "id": 1,
-      "label": "HA NOI BRANCH.",
-      "href": "#hanoi",
+      "label": "North",
+      "href": "#north",
       "children": [
         {
           "id": "hersspamimosa",
@@ -480,8 +480,8 @@
     },
     {
       "id": 2,
-      "label": "HO CHI MINH BRANCH.",
-      "href": "#hcm",
+      "label": "Southern",
+      "href": "#southern",
       "children": [
         {
           "id": "61573465380320",
@@ -952,14 +952,14 @@
     },
     {
       "id": 3,
-      "label": "PROVINCIAL BRANCH.",
-      "href": "#tinh",
+      "label": "Central Region",
+      "href": "#centralregion",
       "children": []
     },
     {
       "id": 4,
-      "label": "OVERSEAS BRANCH.",
-      "href": "#nuocngoai",
+      "label": "Foreign",
+      "href": "#foreign",
       "children": [
         {
           "id": "Chưa có",
