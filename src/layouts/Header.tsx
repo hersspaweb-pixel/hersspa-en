@@ -26,6 +26,7 @@ import {
 } from '@/components/ui/sheet';
 import { Separator } from '@/components/ui/separator';
 import { useDialogStore } from '../../store/useDialogStore';
+import { toTitleCase } from '@/utils/format';
 
 const navItems = [
   {
@@ -87,20 +88,6 @@ const Header = () => {
   const handleNavItemClick = () => {
     setIsMobileMenuOpen(false);
   };
-
-  const openMessenger = (id: string) => {
-    const appLink = `fb-messenger://user-thread/${id}`;
-    const webLink = `https://m.me/${id}`;
-
-    // Ưu tiên mở app Messenger
-    window.location.href = appLink;
-
-    // Nếu không có app Messenger thì fallback sang web
-    setTimeout(() => {
-      window.location.href = webLink;
-    }, 1000);
-  };
-
   return (
     <header className="w-full sticky top-0 z-50 flex justify-center h-[50px] md:h-[60px] bg-[#543217]">
       <div className="w-full max-w-[1200px] mx-auto px-4 grid grid-cols-3 md:grid-cols-7">
@@ -192,7 +179,7 @@ const Header = () => {
             className="bg-[#543217] border-2 cursor-pointer border-[#FFD56E] px-3 md:px-4 lg:px-6 py-1.5 md:py-2 rounded-md relative"
           >
             <span className="bg-gradient-to-b from-white to-[#FFD56E] text-xs md:text-sm lg:text-base xl:text-[20px] bg-clip-text text-transparent font-bold">
-              FRANCHISING
+              Branches
             </span>
           </button>
           <Link
@@ -225,7 +212,9 @@ const Header = () => {
         <DialogContent className="max-w-sm md:max-w-2xl max-h-[90vh] overflow-y-auto mx-4 flex flex-col m-0">
           <DialogHeader className="text-center">
             <DialogTitle className="text-[#543217] text-lg md:text-xl font-bold">
-              {selectedFranchise?.label}
+              {selectedFranchise?.label
+                ? toTitleCase(selectedFranchise.label)
+                : ''}
             </DialogTitle>
             <DialogDescription className="text-[#543217] text-sm md:text-base">
               List of Her S Spa branches.
@@ -234,19 +223,22 @@ const Header = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 max-h-[60vh] md:max-h-96 overflow-y-auto flex-1">
             {selectedFranchise?.children?.map(
-              (location: { id: string; label: string; address: string }) => (
-                <button
-                  onClick={() => openMessenger(location.id)}
-                  key={location.id}
+              (
+                location: { url: string; label: string; address: string },
+                index: number
+              ) => (
+                <Link
+                  href={location.url}
+                  key={index}
                   className="p-2 md:p-3 bg-[#FFD56E] cursor-pointer bg-opacity-10 rounded-md border flex flex-col gap-2 border-[#543217] border-opacity-20 text-left w-full"
                 >
                   <span className="text-[#543217] font-medium text-sm md:text-base">
-                    {location.label}
+                    {toTitleCase(location.label)}
                   </span>
                   <span className="text-black font-medium text-xs md:text-sm">
                     {location.address}
                   </span>
-                </button>
+                </Link>
               )
             )}
             {selectedFranchise?.children?.length === 0 && (
