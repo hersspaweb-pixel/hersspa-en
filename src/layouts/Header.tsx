@@ -243,7 +243,7 @@ const Header = () => {
             )}
             {selectedFranchise?.children?.length === 0 && (
               <div className="col-span-full flex items-center justify-center py-6 md:py-8 text-[#543217] opacity-60 text-sm md:text-base">
-                Sắp có
+                Coming soon
               </div>
             )}
           </div>
