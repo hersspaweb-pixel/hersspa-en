@@ -30,15 +30,15 @@ import { toTitleCase } from '@/utils/format';
 
 const navItems = [
   {
-    label: 'Trang chủ',
+    label: 'Home',
     href: '#',
   },
   {
-    label: 'Giới thiệu',
+    label: 'About',
     href: '#about',
   },
   {
-    label: 'Dịch vụ',
+    label: 'Service',
     href: '#service',
   },
   {
@@ -46,7 +46,7 @@ const navItems = [
     href: '#gallery',
   },
   {
-    label: 'Đối tác',
+    label: 'Partner',
     href: '#partner',
   },
 ];
